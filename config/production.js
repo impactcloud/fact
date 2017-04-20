@@ -27,7 +27,7 @@ module.exports = {
 		domain: "demoeng.auth0.com",
 		clientId: "VRpu22ndm0E2xVT9YHNDn0z0BBbPsuyb",
 		clientSecret: "nmzvZvcx0I5Fe4Ax2ASp7zG4c2igWf31_MotX_I7CtBct6yR0xxSD9RDNeHMXMfH",
-		callbackUrl: "http://localhost:3000/callback",
+		callbackUrl: "https://fact-app.herokuapp.com/callback",
 		sessionSecret: "securepassword",
 		inMemoryStoreSize: "100"
 	},
