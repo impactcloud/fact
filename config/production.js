@@ -4,15 +4,15 @@ const path = require('path');
 
 module.exports = {
 	BoxSDKConfig: {
-		boxClientId: "h6wlt9t9vypf35oo1by773m5yt9bwyb0",
-		boxClientSecret: "nESzT3B5QvIbhbrlXqWqE6R6U5XNN13A",
-		boxEnterpriseId: "1020713",
+		boxClientId: "ajo2gsloocy4xoqgd7zvwtg3qrwt6er0",
+		boxClientSecret: "dcHjeCxs6EG8vwLi6mpcpwKj61AXtQFH",
+		boxEnterpriseId: "17493169",
 		boxPrivateKeyFileName: "private_key.pem",
 		boxPrivateKeyPassword: "passphrase",
 		boxPrivateKey: (boxPrivateKeyFileName) => {
 			return fs.readFileSync(path.resolve(boxPrivateKeyFileName));
 		},
-		boxPublicKeyId: "cqktf7ir",
+		boxPublicKeyId: "6t5m4c5k",
 	},
 	BoxOptions: {
 		inMemoryStoreSize: "100",
@@ -24,9 +24,9 @@ module.exports = {
 	},
 
 	Auth0Config: {
-		domain: "demoeng.auth0.com",
-		clientId: "VRpu22ndm0E2xVT9YHNDn0z0BBbPsuyb",
-		clientSecret: "nmzvZvcx0I5Fe4Ax2ASp7zG4c2igWf31_MotX_I7CtBct6yR0xxSD9RDNeHMXMfH",
+		domain: "impactcloud.auth0.com",
+		clientId: "cg73RivuOeMtTWeU1QRBeCPFEbxeKOiM",
+		clientSecret: "vspMGctQXvtbUZP8rVChV6vkyfmFFwhGgS4-apmgJX2zmlsikE-MzVDWN24xJuyZ",
 		callbackUrl: "https://fact-app.herokuapp.com/callback",
 		sessionSecret: "securepassword",
 		inMemoryStoreSize: "100"
