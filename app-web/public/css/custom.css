@@ -1,0 +1,21 @@
+.preview-container {
+  height: 512px;
+  width: 100%;
+}
+
+.red {
+  color: #f00;
+}
+
+.image {
+  background-image: url('../img/temp.jpg');
+}
+
+.dark-background {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+.menu.separate li:not(:first-child) {
+  border-left: 1px solid #4e4e4e;
+}

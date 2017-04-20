@@ -1,0 +1,35 @@
+<div id="files">
+  <div id="filesUi">
+    <% if(files.length === 0) { %>
+      <p id="noFiles" class="">No files found.</p>
+    <% } else { %>
+      <table class="medium-12 columns">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% files.forEach(function(file) { %>
+            <tr>
+              <td width="60"><img src="/files/<%= file.id %>/thumbnail"></td>
+              <td><a href="/files/<%= file.id %>"><%= file.name %></a></td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    <% } %>
+  </div>
+  <hr>
+  <form id="file-form">
+    <div>
+        <label for="folderName">File:</label>
+        <input id='file-select' name='files' type='file' class="form-control" />
+    </div>
+    <div class="">
+        <button id='upload-button' class="small button" type='submit'>Upload File</button>
+    </div>
+  </form>
+
+</div>

@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <% if(locals.title) { %>
+    <title><%- title %></title>
+  <% } else { %>
+    <title>Box Skeleton App</title>
+  <% } %>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- Box preview SDK -->
+  <link rel="stylesheet" href="https://cdn01.boxcdn.net/platform/preview/0.106.0/en-US/preview.css">
+  <script src="https://cdn01.boxcdn.net/platform/preview/0.106.0/en-US/preview.js"></script>
+  <!-- foundation 6 style + js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+  <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+  <!-- Auth0 js -->
+  <script src="https://cdn.auth0.com/js/auth0/8.3.0/auth0.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- local css and js -->
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/icons/foundation-icons/foundation-icons.css">
+</head>
+<body>
+
+  <!-- Start Top Bar -->
+  <div class="top-bar dark-background">
+    <div class="row">
+      <div class="top-bar-left" style="display: flex;">
+        <ul class="dark-background menu separate">
+          <li class="menu-text">EDR Portal</li>
+          <!-- <li role="menuitem"><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li> -->
+        </ul>
+        <% if(locals.user) { %>
+          <ul class="menu dark-background" style="margin-left: auto;">
+            <li><%- user.displayName %></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        <% } %>
+      </div>
+      <div class="top-bar-right">
+
+      </div>
+    </div>
+  </div>
+  <!-- End Top Bar -->

@@ -1,0 +1,21 @@
+<div id="folders" class="col-md-3">
+  <div id="foldersUi">
+    <% if(folders.length === 0) { %>
+      <p id="noFolders">No subfolders found.</p>
+    <% } %>
+    <ul id="folderGroup" class="medium-12 columns">
+    <% folders.forEach(function(folder) { %>
+      <li class=""><a href="/dashboard/<%= folder.id %>"><%= folder.name %></a></li>
+    <% }); %>
+    </ul>
+  </div>
+  <hr>
+  <!-- <form method="post" action="/dashboard/<%= currentFolder %>/folder">
+    <div class="">
+    <label for="folderName">Folder Name:</label>
+
+    <input type="text" name="folderName" placeholder="Folder name..." />
+    <button type='submit' class="button small">Add Folder</button>
+    </div>
+  </form> -->
+</div>
