@@ -19,7 +19,7 @@ let homeEnv = {
  * Render home page
 **/
 module.exports.main = (req, res, next) => {
-	res.render('pages/home', { title: "Industry Portal", env: homeEnv });
+	res.render('pages/home', { title: "FACT Portal", env: homeEnv });
 }
 
 

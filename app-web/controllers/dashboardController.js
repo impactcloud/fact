@@ -24,7 +24,7 @@ module.exports.main = asyncFunc(function* (req, res, next) {
 
 	res.render('pages/dashboard', {
 		user: req.user,
-		title: "Industry Portal",
+		title: "FACT Portal",
 		currentFolder: rootFolder,
 		folders: foldersAndFiles.folders,
 		files: foldersAndFiles.files,
