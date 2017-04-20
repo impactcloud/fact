@@ -12,7 +12,7 @@ module.exports = {
 		boxPrivateKey: (boxPrivateKeyFileName) => {
 			return fs.readFileSync(path.resolve(boxPrivateKeyFileName));
 		},
-		boxPublicKeyId: "6t5m4c5k",
+		boxPublicKeyId: "bd2c3shr",
 	},
 	BoxOptions: {
 		inMemoryStoreSize: "100",
