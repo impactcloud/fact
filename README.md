@@ -1,4 +1,4 @@
-# Box Industries Skeleton
+# Field Assessment Content Tool
 
 ## Prerequisites
 [Node.js](https://nodejs.org/en/)
@@ -116,7 +116,7 @@ Run `npm install` to download all needed dependencies for this project. There ar
 1. Use `npm start` to run the server. The server will run until you end the process.
 2. If you want to make changes and have the server restart automatically, use `npm run dev-start`.
 
-Once the server is running, navigate to [http://localhost:3000](http://localhost:3000). 
+Once the server is running, navigate to [http://localhost:3000](http://localhost:3000).
 
 Copyright and License
 ---------------------
